@@ -1,4 +1,23 @@
 <resources>
+    <!-- GLOBAL -->
     <string name="app_name">PlayerManagementSystem</string>
     <string name="app_name_formatted">Player Management System</string>
+
+    <!-- SUBHEADERS -->
+    <string name="sign_in_subheader">Email:</string>
+    <string name="register_subheader">Email:</string>
+
+    <!-- DETAILS -->
+    <!-- Sign In -->
+    <string name="email_or_username_indicator">Email or Username:</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="register_option">"Don't have an account?"</string>
+    <string name="register_button">Register</string>
+
+    <!-- Register -->
+    <string name="email_indicator">Email:</string>
+    <string name="full_name_indicator">Full Name:</string>
+    <string name="username_indicator">Username:</string>
+    <string name="password_indicator">Password:</string>
+    <string name="password_verification_indicator">Re-Enter Password:</string>
 </resources>
