@@ -6,6 +6,12 @@
     <!-- SUBHEADERS -->
     <string name="sign_in_subheader">Email:</string>
     <string name="register_subheader">Email:</string>
+    <string name="account_name_subheader">"Account Name's"</string>
+    <string name="rankings_subheader">"Rankings"</string>
+    <string name="submit_new_score_subheader">Submit New Score?</string>
+
+    <!-- OPTIONS -->
+    <string name="logout_button">Logout</string>
 
     <!-- DETAILS -->
     <!-- Sign In -->
@@ -20,4 +26,21 @@
     <string name="username_indicator">Username:</string>
     <string name="password_indicator">Password:</string>
     <string name="password_verification_indicator">Re-Enter Password:</string>
+    <string name="login_option">Already have an account?</string>
+
+    <!-- Scores -->
+    <string name="global_text_button">Global</string>
+    <string name="personal_text_button">Personal</string>
+    <string name="game_indicator">Game</string>
+    <string name="level_indicator">Game</string>
+    <string name="new_score_button">Game</string>
+    <string name="player_indicator">Game</string>
+    <string name="score_indicator">Game</string>
+    <string name="ranking_indicator">Game</string>
+
+    <!-- Input Scores -->
+    <string name="submit_new_score_indicator">Submit New Score?</string>
+    <string name="new_score_hint">New Score</string>
+    <string name="highest_score_indicator">Highest Score</string>
+    <string name="previous_score_indicator">Previous Score</string>
 </resources>

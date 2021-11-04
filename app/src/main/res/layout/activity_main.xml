@@ -28,7 +28,7 @@
             android:textAlignment="center"
 
             android:textColor="@color/Light"
-            android:textSize="21"
+            android:textSize="21sp"
             android:textStyle="bold" />
     </com.google.android.material.navigation.NavigationView>
 
@@ -44,13 +44,15 @@
 
     <EditText
         android:id="@+id/inputUsernameOrEmailLabel"
-        android:layout_width="347"
-        android:layout_height="48"
+        android:layout_width="347dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:ems="10"
         android:inputType="text"
         android:minHeight="48dp"
         android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailOrUsernameLabel"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -67,14 +69,16 @@
 
     <EditText
         android:id="@+id/inputPasswordLabel"
-        android:layout_width="347"
-        android:layout_height="48"
+        android:layout_width="347dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
         android:ems="10"
         android:inputType="text"
         android:minHeight="48dp"
         android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailOrUsernameLabel"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -97,7 +101,7 @@
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
         android:gravity="center"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton">
@@ -113,7 +117,7 @@
             android:id="@+id/registerOptionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="8dp"
             android:text="@string/register_button"
             app:iconPadding="8dp" />
 
