@@ -31,12 +31,12 @@
     <!-- Scores -->
     <string name="global_text_button">Global</string>
     <string name="personal_text_button">Personal</string>
-    <string name="game_indicator">Game</string>
-    <string name="level_indicator">Game</string>
-    <string name="new_score_button">Game</string>
-    <string name="player_indicator">Game</string>
-    <string name="score_indicator">Game</string>
-    <string name="ranking_indicator">Game</string>
+    <string name="game_indicator">Game:</string>
+    <string name="level_indicator">Level:</string>
+    <string name="new_score_button">New Score</string>
+    <string name="player_indicator">Player</string>
+    <string name="score_indicator">Score</string>
+    <string name="ranking_indicator">Ranking</string>
 
     <!-- Input Scores -->
     <string name="submit_new_score_indicator">Submit New Score?</string>
