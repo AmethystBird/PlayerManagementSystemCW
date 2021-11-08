@@ -11,4 +11,6 @@
     <color name="NikitaLavender">#7040FF</color>
     <color name="Light">#F0F0F0</color>
     <color name="Dark">#101010</color>
+    <color name="RedLight">#ffc0c0</color>
+    <color name="RedDark">#c00000</color>
 </resources>
