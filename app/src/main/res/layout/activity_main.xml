@@ -14,6 +14,7 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:background="@color/NikitaLavender"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -90,7 +91,9 @@
         android:layout_marginStart="158dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="159dp"
+        android:onClick="ActivityTransition"
         android:text="@string/sign_in_button"
+        android:tag="testTag"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputPasswordLabel" />
@@ -118,6 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:onClick="ActivityTransition"
             android:text="@string/register_button"
             app:iconPadding="8dp" />
 

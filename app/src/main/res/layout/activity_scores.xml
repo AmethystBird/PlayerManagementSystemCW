@@ -14,6 +14,7 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:background="@color/NikitaLavender"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -95,12 +96,13 @@
         app:layout_constraintTop_toBottomOf="@+id/levelLabel" />
 
     <Button
-        android:id="@+id/loginButton2"
+        android:id="@+id/newScoreButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="161dp"
+        android:onClick="ActivityTransition"
         android:text="@string/new_score_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +118,7 @@
         android:stretchColumns="*"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton2">
+        app:layout_constraintTop_toBottomOf="@+id/newScoreButton">
 
         <TableRow
             android:layout_width="match_parent"

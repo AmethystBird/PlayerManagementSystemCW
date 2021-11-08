@@ -14,6 +14,7 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:background="@color/NikitaLavender"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -181,7 +182,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton">
+        app:layout_constraintTop_toBottomOf="@+id/registerButton">
 
         <TextView
             android:id="@+id/registerOptionLabel"
@@ -191,22 +192,24 @@
             android:textAllCaps="false" />
 
         <Button
-            android:id="@+id/registerOptionButton"
+            android:id="@+id/loginOptionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:onClick="ActivityTransition"
             android:text="@string/sign_in_button"
             app:iconPadding="8dp" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/registerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="153dp"
+        android:onClick="ActivityTransition"
         android:text="@string/register_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
