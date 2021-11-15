@@ -5,28 +5,29 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class Register extends AppCompatActivity {
 
     //Email
-    TextView emailInput;
+    EditText emailInput;
     TextView emailPrompt;
 
     //Full Name
-    TextView fullNameInput;
+    EditText fullNameInput;
     TextView fullNamePrompt;
 
     //Username
-    TextView usernameInput;
+    EditText usernameInput;
     TextView usernamePrompt;
 
     //Password
-    TextView inputPasswordLabel;
+    EditText inputPasswordLabel;
     TextView passwordPrompt2;
 
     //Password Re-Entry
-    TextView passwordRetypeInput;
+    EditText passwordRetypeInput;
     TextView retypePasswordPrompt;
 
     @Override
@@ -60,11 +61,11 @@ public class Register extends AppCompatActivity {
     {
         if (view.getId() == R.id.registerButton) //Login button clicked
         {
-            boolean missingFields = false;
+            boolean inapplicableFields = false;
             if (emailInput.getText().toString().isEmpty()) //If the user has left the username or email TextView blank
             {
                 emailPrompt.setText("Username or Email required.");
-                missingFields = true;
+                inapplicableFields = true;
             }
             else if (!emailPrompt.getText().toString().isEmpty())
             {
@@ -73,7 +74,7 @@ public class Register extends AppCompatActivity {
             if (fullNameInput.getText().toString().isEmpty()) //If the user has left the username or email TextView blank
             {
                 fullNamePrompt.setText("Full Name required.");
-                missingFields = true;
+                inapplicableFields = true;
             }
             else if (!fullNamePrompt.getText().toString().isEmpty())
             {
@@ -82,7 +83,7 @@ public class Register extends AppCompatActivity {
             if (usernameInput.getText().toString().isEmpty()) //If the user has left the username or email TextView blank
             {
                 usernamePrompt.setText("Full Name required.");
-                missingFields = true;
+                inapplicableFields = true;
             }
             else if (!usernamePrompt.getText().toString().isEmpty())
             {
@@ -90,31 +91,40 @@ public class Register extends AppCompatActivity {
             }
 
             //Fixing this up tomorrow; feeling ill atm
-            if ((inputPasswordLabel.getText() != passwordRetypeInput.getText()) && (!passwordPrompt2.getText().toString().isEmpty() && !retypePasswordPrompt.getText().toString().isEmpty()))
+            String password = inputPasswordLabel.getText().toString();
+            String passwordReType = passwordRetypeInput.getText().toString();
+
+            //if ((inputPasswordLabel.getText().toString() != passwordRetypeInput.getText().toString()) && (!inputPasswordLabel.getText().toString().isEmpty() && !passwordRetypeInput.getText().toString().isEmpty()))
+            //if ((inputPasswordLabel.getText().toString().equals(passwordRetypeInput.getText().toString())) && (!inputPasswordLabel.getText().toString().isEmpty() && !passwordRetypeInput.getText().toString().isEmpty()))
+            if (((password.contentEquals(passwordReType)) == false) && (!inputPasswordLabel.getText().toString().isEmpty() && !passwordRetypeInput.getText().toString().isEmpty()))
             {
                 passwordPrompt2.setText("Your password attempts do not match.");
                 retypePasswordPrompt.setText("Your password attempts do not match.");
+                inapplicableFields = true;
             }
-            else if (inputPasswordLabel.getText().toString().isEmpty()) //If the user has left the password TextView blank
+            else
             {
-                passwordPrompt2.setText("Password is required.");
-                missingFields = true;
-            }
-            else if (!passwordPrompt2.getText().toString().isEmpty())
-            {
-                passwordPrompt2.setText("");
-            }
-            if (passwordRetypeInput.getText().toString().isEmpty()) //If the user has left the password TextView blank
-            {
-                retypePasswordPrompt.setText("Password Re-Entry is required.");
-                missingFields = true;
-            }
-            else if (!retypePasswordPrompt.getText().toString().isEmpty())
-            {
-                retypePasswordPrompt.setText("");
+                if (inputPasswordLabel.getText().toString().isEmpty()) //If the user has left the password TextView blank
+                {
+                    passwordPrompt2.setText("Password is required.");
+                    inapplicableFields = true;
+                }
+                else if (!inputPasswordLabel.getText().toString().isEmpty()) //If the user has entered into the password TextView
+                {
+                    passwordPrompt2.setText("");
+                }
+                if (passwordRetypeInput.getText().toString().isEmpty()) //If the user has left the password TextView blank
+                {
+                    retypePasswordPrompt.setText("Password Re-Entry is required.");
+                    inapplicableFields = true;
+                }
+                else if (!passwordRetypeInput.getText().toString().isEmpty()) //If the user has entered (by implication, a matching password) into the password TextView
+                {
+                    retypePasswordPrompt.setText("");
+                }
             }
 
-            if (missingFields == false)
+            if (inapplicableFields == false)
             {
                 ResetActivity();
                 Intent activityTransition = new Intent(Register.this, Scores.class);
