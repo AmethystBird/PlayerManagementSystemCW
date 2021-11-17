@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Uni/AndroidStudio/PlayerManagementSystem/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Uni/AndroidStudio/PlayerManagementSystem/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Uni/AndroidStudio/PlayerManagementSystem/app/src/main/res/layout/activity_new_score.xml" value="0.25" />
+        <entry key="..\:/Uni/AndroidStudio/PlayerManagementSystem/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Uni/AndroidStudio/PlayerManagementSystem/app/src/main/res/layout/activity_scores.xml" value="0.25" />
         <entry key="..\:/Uni/AndroidStudio/Repository/PlayerManagementSystemCW/app/src/main/res/drawable/button_values.xml" value="0.225" />
         <entry key="..\:/Uni/AndroidStudio/Repository/PlayerManagementSystemCW/app/src/main/res/drawable/ic_launcher_background.xml" value="0.225" />
         <entry key="..\:/Uni/AndroidStudio/Repository/PlayerManagementSystemCW/app/src/main/res/drawable/shape_values.xml" value="0.225" />

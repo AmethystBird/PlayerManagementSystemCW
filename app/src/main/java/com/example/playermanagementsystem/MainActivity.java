@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
                 //ResetActivity();
                 Intent activityTransition = new Intent(MainActivity.this, Scores.class);
                 startActivity(activityTransition);
-                finish();
+                //finish();
+                //onRestart();
             }
         }
         else if (view.getId() == R.id.registerOptionButton) //Register option button clicked
@@ -65,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
             //ResetActivity();
             Intent activityTransition = new Intent(MainActivity.this, Register.class);
             startActivity(activityTransition);
-            finish();
+            //finish();
+            //onRestart();
         }
     }
     
