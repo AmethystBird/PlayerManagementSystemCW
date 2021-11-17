@@ -54,16 +54,18 @@ public class MainActivity extends AppCompatActivity {
 
             if (missingFields == false) //If they have no missing fields
             {
-                ResetActivity();
+                //ResetActivity();
                 Intent activityTransition = new Intent(MainActivity.this, Scores.class);
                 startActivity(activityTransition);
+                finish();
             }
         }
         else if (view.getId() == R.id.registerOptionButton) //Register option button clicked
         {
-            ResetActivity();
+            //ResetActivity();
             Intent activityTransition = new Intent(MainActivity.this, Register.class);
             startActivity(activityTransition);
+            finish();
         }
     }
     

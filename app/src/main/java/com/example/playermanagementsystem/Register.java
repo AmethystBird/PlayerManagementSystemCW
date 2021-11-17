@@ -126,14 +126,16 @@ public class Register extends AppCompatActivity {
 
             if (inapplicableFields == false)
             {
-                ResetActivity();
+                //ResetActivity();
+                finish();
                 Intent activityTransition = new Intent(Register.this, Scores.class);
                 startActivity(activityTransition);
             }
         }
         else if (view.getId() == R.id.loginOptionButton) //Register option button clicked
         {
-            ResetActivity();
+            //ResetActivity();
+            finish();
             Intent activityTransition = new Intent(Register.this, MainActivity.class);
             startActivity(activityTransition);
         }

@@ -6,7 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.HashMap;
+
 public class Scores extends AppCompatActivity {
+
+    HashMap<Integer, String[]> scores = new HashMap<Integer, String[]>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

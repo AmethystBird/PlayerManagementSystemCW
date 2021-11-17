@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class NewScore extends AppCompatActivity {
 
@@ -18,5 +19,15 @@ public class NewScore extends AppCompatActivity {
     public void ActivityTransition(View view)
     {
         //Not implemented yet
+    }
+
+    public void NewScoreInput(View view)
+    {
+        EditText scoreEditText = findViewById(R.id.inputNewScore);
+
+        if (!scoreEditText.getText().toString().isEmpty())
+        {
+
+        }
     }
 }
