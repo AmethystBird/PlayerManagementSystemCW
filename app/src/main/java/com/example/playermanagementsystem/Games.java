@@ -5,11 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 
 //Consider static class
-public final class Games {
+public class Games {
     //Add game objects to this class
-    HashMap<Integer, Game> games = new HashMap<Integer, Game>();
+    static HashMap<Integer, Game> games = new HashMap<Integer, Game>();
 
-    void DummyData()
+    static void DummyData()
     {
         Game dummyGame = new Game();
         dummyGame.gameTitle = "Choose Game";

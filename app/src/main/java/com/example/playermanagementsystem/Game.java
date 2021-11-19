@@ -25,6 +25,6 @@ public class Game {
     };*/
 
     //Attributes of game
-    String gameTitle;
+    String gameTitle = "BASE NAME";
     //int levelAmount = 0;
 }

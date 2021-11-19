@@ -16,6 +16,6 @@ public class Level {
     };*/
 
     //Attributes of level
-    String levelTitle;
+    String levelTitle = "BASE NAME";
     //int scoreAmount = 0;
 }

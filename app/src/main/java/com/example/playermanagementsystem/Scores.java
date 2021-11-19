@@ -44,7 +44,10 @@ public class Scores extends AppCompatActivity {
 
         //Generates default data for spinners
         AssignStaticData();
-        FilterData(0, 0);
+
+        if (errors == false) {
+            FilterData(0, 0);
+        }
 
         //Setting up the spinners
         Spinner gameSpinner = findViewById(R.id.gameSpinner);
@@ -70,7 +73,6 @@ public class Scores extends AppCompatActivity {
     public void AssignStaticData()
     {
         //Adding 'game' objects to 'Games' object
-
         try {
             allGames.DummyData();
         }
@@ -132,8 +134,12 @@ public class Scores extends AppCompatActivity {
     {
         try {
             //Gets strings from game, level and object classes for display
-            filteredGames.add(allGames.games.get(gameIndex).gameTitle);
-            filteredLevels.add(allGames.games.get(gameIndex).levels.get(levelIndex).levelTitle);
+
+            Game game = allGames.games.get(1);
+            String gameTitle = game.gameTitle;
+
+            //filteredGames.add(allGames.games.get(gameIndex).gameTitle);
+            //filteredLevels.add(allGames.games.get(gameIndex).levels.get(levelIndex).levelTitle);
         }
         catch (Exception exc)
         {
