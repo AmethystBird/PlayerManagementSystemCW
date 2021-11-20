@@ -9,6 +9,10 @@ public class Game {
     //Add level objects to this class
     HashMap<Integer, Level> levels = new HashMap<Integer, Level>();
 
+    //Attributes of game
+    String gameTitle = "BASE NAME";
+    //int levelAmount = 0;
+
     void DummyData()
     {
         Level dummyLevel = new Level();
@@ -23,8 +27,4 @@ public class Game {
             //add("Select Level");
         }
     };*/
-
-    //Attributes of game
-    String gameTitle = "BASE NAME";
-    //int levelAmount = 0;
 }

@@ -135,8 +135,9 @@ public class Scores extends AppCompatActivity {
         try {
             //Gets strings from game, level and object classes for display
 
-            Game game = allGames.games.get(1);
-            String gameTitle = game.gameTitle;
+            Game game = (Game)allGames.games.get(1);
+            //game.gameTitle = "MODIFIED"; //Try this if else fails
+            String gameTitle = (String)game.gameTitle;
 
             //filteredGames.add(allGames.games.get(gameIndex).gameTitle);
             //filteredLevels.add(allGames.games.get(gameIndex).levels.get(levelIndex).levelTitle);
